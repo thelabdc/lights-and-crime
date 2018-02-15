@@ -1,0 +1,9 @@
+version: "3"
+services:
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    working_dir: /lights-and-crime
+    volumes:
+      - ".:/lights-and-crime"
