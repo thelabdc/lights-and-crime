@@ -104,7 +104,10 @@ def get_crimes():
 
 
 def get_roads():
-    return gpd.read_file("data/Roads_All").to_crs({'init': 'epsg:2804'})
+    return _download_and_parse(
+        'https://opendata.arcgis.com/datasets/e8299c86b4014f109fedd7e95ae20d52_61.geojson',
+        'roads.geojson'
+    ).to_crs({'init': 'epsg:2804'})
 
 
 def get_workorders():

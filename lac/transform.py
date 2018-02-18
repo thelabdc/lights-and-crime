@@ -11,10 +11,9 @@ def repairs_to_circles(repairs, within_m):
 
 
 def create_repairs_with_crimes(repairs_circles, crimes):
-    return gpd.sjoin(repairs_circles, crimes, 'left').assign(
-        rel_days=lambda df: (df['START_DATE'] - df['Day of Datewoclosed']) / np.timedelta64(1, 'D')
-    ).dropna(
-        subset=['rel_days']
+    return gpd.sjoin(repairs_circles, crimes, 'left').dropna(
+        subset=['START_DATE', 'Day of Datewoclosed'],
+        how='any'
     ).assign(
         is_day=lambda df: df['START_DATE'].apply(is_day)
     )

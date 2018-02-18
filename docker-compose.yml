@@ -4,6 +4,5 @@ services:
     build: .
     ports:
       - "8888:8888"
-    working_dir: /lights-and-crime
     volumes:
-      - ".:/lights-and-crime"
+      - ".:/home/jovyan"

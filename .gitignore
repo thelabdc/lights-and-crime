@@ -1,0 +1,7 @@
+.cache
+.ipynb_checkpoints
+.ipython
+.local
+__pycache__
+altair-data*
+data/*.geojson
