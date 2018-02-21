@@ -50,7 +50,7 @@ Comes in from citizens or possibly DoT when doing monthly inspection.
  - 2014 https://opendata.arcgis.com/datasets/17cafb3ffab347409def7e85e14c56bd_5.geojson
  - 2015 https://opendata.arcgis.com/datasets/b93ec7fc97734265a2da7da341f1bba2_6.geojson
  - 2016 https://opendata.arcgis.com/datasets/0e4b7d3a83b94a178b3d1f015db901ee_7.geojson
- - 2017 = "https://opendata.arcgis.com/datasets/19905e2b0e1140ec9ce8437776feb595_8.geojson
+ - 2017 https://opendata.arcgis.com/datasets/19905e2b0e1140ec9ce8437776feb595_8.geojson
  
 Cityworks Work Orders: 
 Creates workorder for repeair.
