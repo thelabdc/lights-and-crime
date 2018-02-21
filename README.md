@@ -1,7 +1,8 @@
 # Exploratory Analyses of Lighting and Crime in DC
 
 There have been a number of studies of the deterrent effects of lighting on crime, most notably a large-scale experiment in New York City. 
-This project seeks to exploit a kind of natural experiment by examining crime in close proximity to street lights before andA the week after they have been repaired. 
+
+This project seeks to exploit a kind of natural experiment by examining crime in close proximity to street lights before and after they have been repaired. 
 
 ## Initial Analyses
 The simplest analysis we can conceive is simply examining crime the week before and the week after a repair. This will require (1) goecoding the crime data; (2) geocoding lighting; (3) drawing some reasonable polygon -- perhaps a circle or perhaps a city block) around each light; (4) joining the lighting polygons with the crime data surrounding each light for the week prior to and following the repair. 
