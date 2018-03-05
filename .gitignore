@@ -5,3 +5,8 @@
 __pycache__
 altair-data*
 data/*.geojson
+data/*.pickle
+dask-worker-space/
+.conda
+.dask
+.jupyter

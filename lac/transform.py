@@ -2,21 +2,27 @@ import geopandas as gpd
 import numpy as np
 from astral import Astral
 from functools import lru_cache
+from dask import delayed
+from .get import repairs, crimes
+from .dask import pickle_disk
+
+WITHIN_M = 100
+
+repairs_circles = repairs.assign(
+    circles_geometry=repairs.geometry.buffer(WITHIN_M)
+).set_geometry('circles_geometry')
 
 
-def repairs_to_circles(repairs, within_m):
-    return repairs.assign(
-        circles_geometry=repairs.geometry.buffer(within_m)
-    ).set_geometry('circles_geometry')
-
-
-def create_repairs_with_crimes(repairs_circles, crimes):
-    return gpd.sjoin(repairs_circles, crimes, 'left').dropna(
+repairs_with_crimes = pickle_disk(
+    delayed(gpd.sjoin, pure=True)(repairs_circles, crimes, 'left').dropna(
         subset=['START_DATE', 'Day of Datewoclosed'],
         how='any'
     ).assign(
-        is_day=lambda df: df['START_DATE'].apply(is_day)
-    )
+        is_day=lambda df: df['START_DATE'].apply(is_day),
+        rel_days=lambda df: np.floor((df['START_DATE'] - df['Day of Datewoclosed']) / np.timedelta64(1, 'D'))
+    ),
+    'data/repairs_with_crimes.pickle'
+)
 
 
 a = Astral()
