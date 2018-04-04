@@ -31,4 +31,4 @@ Public crime data, although exluding some offenses such as sexual assaults, is f
  - 2013 [information](http://opendata.dc.gov/datasets/crime-incidents-in-2013) & [geojson](https://opendata.arcgis.com/datasets/5fa2e43557f7484d89aac9e1e76158c9_10.geojson)
  - 2012 [information](http://opendata.dc.gov/datasets/crime-incidents-in-2012) & [geojson](https://opendata.arcgis.com/datasets/010ac88c55b1409bb67c9270c8fc18b5_11.geojson)
  - 2011 [information](http://opendata.dc.gov/datasets/crime-incidents-in-2011) & [geojson](https://opendata.arcgis.com/datasets/9d5485ffae914c5f97047a7dd86e115b_35.geojson)
- - 2010 [information](http://opendata.dc.gov/datasets/crime-incidents-in-2010) & [[geojson](https://opendata.arcgis.com/datasets/fdacfbdda7654e06a161352247d3a2f0_34.geojson)
+ - 2010 [information](http://opendata.dc.gov/datasets/crime-incidents-in-2010) & [geojson](https://opendata.arcgis.com/datasets/fdacfbdda7654e06a161352247d3a2f0_34.geojson)
