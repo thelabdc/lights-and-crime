@@ -14,17 +14,10 @@ Happily, DC maintains a great deal of open data about streetlight locations and 
 Streetlight repair data spans two data sources: the current CityWorks workorder management data system that DC adopted in 2016, and the now-retired iSlims work order management system that managed work orders prior to Cityworks. CityWorks data is available via a public API, and DDOT has generously provided us with access to data from the retired iSlims system. 
 
 Streetlights: 
-
 - location and features [open data portal page](http://opendata.dc.gov/datasets/street-lights) & [geojson](https://opendata.arcgis.com/datasets/6cb6520725b0489d9a209a337818fad1_90.geojson)
-
-- Cityworks Work Orders: 
-
-   Service requests [open data portal page](http://opendata.dc.gov/datasets/cityworks-service-requests) & 
+ - CityWorks service requests [open data information](http://opendata.dc.gov/datasets/cityworks-service-requests) & 
 [geojson](https://opendata.arcgis.com/datasets/a1dd480eb86445239c8129056ab05ade_0.geojson)
-
-   Work orders [open data portal page](http://opendata.dc.gov/datasets/cityworks-workorders) & [geojson](https://opendata.arcgis.com/datasets/a1dd480eb86445239c8129056ab05ade_0.geojson)
-
-
+ - CityWorks work orders [open data information](http://opendata.dc.gov/datasets/cityworks-workorders) & [geojson](https://opendata.arcgis.com/datasets/a1dd480eb86445239c8129056ab05ade_0.geojson)
 - iSlims Work Orders: available in the data subfolder. (We know, we know, but it's not big and until we get it up on the open data portal, this is just the easiest thing to do.)
 
 Crime: 
