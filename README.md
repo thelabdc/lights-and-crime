@@ -19,10 +19,10 @@ Streetlights:
 
 - Cityworks Work Orders: 
 
-⋅⋅⋅Service requests [open data portal page](http://opendata.dc.gov/datasets/cityworks-service-requests) & 
+   Service requests [open data portal page](http://opendata.dc.gov/datasets/cityworks-service-requests) & 
 [geojson](https://opendata.arcgis.com/datasets/a1dd480eb86445239c8129056ab05ade_0.geojson)
 
-⋅⋅⋅Work orders [open data portal page](http://opendata.dc.gov/datasets/cityworks-workorders) & [geojson](https://opendata.arcgis.com/datasets/a1dd480eb86445239c8129056ab05ade_0.geojson)
+   Work orders [open data portal page](http://opendata.dc.gov/datasets/cityworks-workorders) & [geojson](https://opendata.arcgis.com/datasets/a1dd480eb86445239c8129056ab05ade_0.geojson)
 
 
 - iSlims Work Orders: available in the data subfolder. (We know, we know, but it's not big and until we get it up on the open data portal, this is just the easiest thing to do.)
