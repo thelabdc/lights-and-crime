@@ -10,7 +10,8 @@ The simplest analysis we can conceive is simply examining crime the week before 
 
 Happily, DC maintains a great deal of open data about streetlight locations and crimes known to MPD. 
 
-Streetlights: Location and features is the DDOT inventory of steetlights in the district.  Repair data spans two data sources: (1) the current CityWorks workorder management data system that DC adopted in 2016, and (2) the now-retired iSlims work order management system that managed work orders prior to Cityworks. CityWorks data is available via a public API, and DDOT has generously provided us with access to data from the retired iSlims system. 
+### Streetlights
+Location and features is the DDOT inventory of steetlights in the district.  Repair data spans two data sources: (1) the current CityWorks workorder management data system that DC adopted in 2016, and (2) the now-retired iSlims work order management system that managed work orders prior to Cityworks. CityWorks data is available via a public API, and DDOT has generously provided us with access to data from the retired iSlims system. 
 
  - location and features [information](http://opendata.dc.gov/datasets/street-lights) & [geojson](https://opendata.arcgis.com/datasets/6cb6520725b0489d9a209a337818fad1_90.geojson)
 
@@ -21,7 +22,8 @@ Streetlights: Location and features is the DDOT inventory of steetlights in the 
 
  - iSlims Work Orders: available in the data subfolder. (We know, we know, but it's not big and until we get it up on the open data portal, this is just the easiest thing to do.)
 
-Crime: Public crime data, although exluding some offenses such as sexual assaults, is fairly extensive and includes many common offenses that one would expect to be influenced by lighting if lighting were to have an effect (theft from auto, robbery, assault, etc.). 
+### Crime
+Public crime data, although exluding some offenses such as sexual assaults, is fairly extensive and includes many common offenses that one would expect to be influenced by lighting if lighting were to have an effect (theft from auto, robbery, assault, etc.). 
 
  - 2017 [information](http://opendata.dc.gov/datasets/crime-incidents-in-2017) & [geojson](https://opendata.arcgis.com/datasets/6af5cb8dc38e4bcbac8168b27ee104aa_38.geojson)
  
