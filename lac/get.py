@@ -39,29 +39,6 @@ def _download_parse_and_concat(soure_url_and_target_files):
         [_download_and_parse(source_url, target_file) for [source_url, target_file] in soure_url_and_target_files]
     )
 
-repairs = pickle_disk(
-    _assign_cols(
-        _to_gdf(
-            pd.read_excel(
-                'data/repairs.xlsx',
-                thousands=',',
-                converters={
-                    'Day of Datewoclosed': pd.to_datetime
-                },
-                na_values='0'
-            ).dropna(),
-            x='Woxcoordinate',
-            y='Woycoordinate',
-            crs={"init": "EPSG:2804"}
-        ).rename(index=str, columns={
-            "Description (Workorder)": "description"
-        }),
-        description=lambda s: s.astype('category'),
-        Applytoentity=lambda s: s.astype('category'),
-    ),
-    'data/repairs.pickle'
-)
-
 crimes = pickle_disk(
         _assign_cols(
             _download_parse_and_concat([
@@ -96,12 +73,36 @@ roads = pickle_disk(
     'data/roads.pickle'
 )
 
-workorders = _download_and_parse(
-    'https://opendata.arcgis.com/datasets/a1dd480eb86445239c8129056ab05ade_0.geojson',
-    'workorders.geojson'
+workorders = pickle_disk(
+    _download_and_parse(
+        'https://opendata.arcgis.com/datasets/a1dd480eb86445239c8129056ab05ade_0.geojson',
+        'workorders.geojson'
+    ),
+    'data/workorders.pickle'
 )
 
-streetlights = _download_and_parse(
-    'https://opendata.arcgis.com/datasets/6cb6520725b0489d9a209a337818fad1_90.geojson',
-    'streetlights.geojson'
+streetlights = pickle_disk(
+    _download_and_parse(
+        'https://opendata.arcgis.com/datasets/6cb6520725b0489d9a209a337818fad1_90.geojson',
+        'streetlights.geojson'
+    ),
+    'data/streetlights.pickle'
+)
+
+service_requests = pickle_disk(
+    _download_and_parse(
+        'https://opendata.arcgis.com/datasets/96bb7f56588c4d4595933c0ba772b3cb_1.geojson',
+        'service_requests.geojson'
+    ),
+    'data/service-requiests.pickle'
+)
+
+
+repairs = pickle_disk(
+    _assign_cols(
+        workorders[workorders.DESCRIPTION.str.contains('light', case=False)],
+        WORKORDERCLOSEDDATE=pd.to_datetime,
+        INITIATEDDATE=pd.to_datetime,
+    ).dropna(subset=['INITIATEDDATE', 'WORKORDERCLOSEDDATE']),
+    'data/repairs.pickle'
 )
