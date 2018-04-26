@@ -2,6 +2,9 @@
 
 This project seeks to exploit a kind of natural experiment in the District of Columbia by examining crime in close proximity to street lights before and after they have been repaired. 
 
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/thelabdc/lights-and-crime/master)
+
+
 ## Analyses
 
 The simplest analysis we can conceive is simply examining crime the week before and the week after a repair. This will require (1) goecoding the crime data; (2) geocoding lighting; (3) drawing some reasonable polygon -- perhaps a circle or perhaps a city block) around each light; (4) joining the lighting polygons with the crime data surrounding each light for the week prior to and following the repair.  More sophisticated analyses will include standard statististical analyses and, possibly, machine learning analyses to predict where improved or upgraded lighting could do the most good. 
