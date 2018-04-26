@@ -5,7 +5,6 @@ RUN conda install -y -c conda-forge \
     rtree \
     fiona \
     geopandas \
-    jupyterlab=0.31.10 \
     dask \
     distributed \
     python-graphviz
