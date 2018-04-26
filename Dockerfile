@@ -6,7 +6,6 @@ RUN conda install -y -c conda-forge \
     fiona \
     geopandas \
     postgis \
-    psycopg2 \
     jupyterlab=0.31.10 \
     dask \
     distributed \
