@@ -1,0 +1,14 @@
+name: lights-and-crime
+channels:
+  - conda-forge
+dependencies:
+  - geopy
+  - rtree
+  - geopandas
+  - dask
+  - distributed
+  - python-graphviz
+  - pip:
+    - astral
+    - cachey
+    - git+https://github.com/altair-viz/altair
