@@ -23,7 +23,7 @@ DDOT maintains both a detailed inventory of steetlights in the District and reco
 
  - CityWorks work order [information](http://opendata.dc.gov/datasets/cityworks-workorders) & [geojson](https://opendata.arcgis.com/datasets/a1dd480eb86445239c8129056ab05ade_0.geojson)
 
- - iSlims Work Order Data: available in the data subfolder. (We know, we know, but it's not big and until we get it up on the open data portal, this is just the easiest thing to do.)
+ - iSlims Work Order Data: available in the data subfolder. (We know, we know, but it's not big and until we get it up on the open data portal, this is just the easiest thing to do.)  Please use the pickled data files.  They are the most complete and up-to-date. 
 
 ### Crime
 Public crime data, although exluding some offenses such as sexual assaults, is fairly extensive and includes many common offenses that one would expect to be influenced by lighting if lighting were to have an effect (theft from auto, robbery, assault, etc.). 
